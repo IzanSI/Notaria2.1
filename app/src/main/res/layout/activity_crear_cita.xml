@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_light"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crear Cita"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue_dark"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Campo Nombre del Notario -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Notario"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="4dp" />
+        <EditText
+            android:id="@+id/etNombreNotario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue_medium"
+            android:hint="Escribe el nombre del notario"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campo Número de Sala -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Número de Sala"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="4dp" />
+        <EditText
+            android:id="@+id/etNumeroSala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue_medium"
+            android:hint="Escribe el número de sala"
+            android:inputType="number"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campo Fecha (Selector de Calendario) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="4dp" />
+        <Button
+            android:id="@+id/btnSeleccionarFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue_medium"
+            android:text="Seleccionar Fecha"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:id="@+id/tvFechaSeleccionada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha no seleccionada"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campo Hora (Selector de Hora) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hora"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="4dp" />
+        <Button
+            android:id="@+id/btnSeleccionarHora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue_medium"
+            android:text="Seleccionar Hora"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:id="@+id/tvHoraSeleccionada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hora no seleccionada"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campo Descripción -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripción"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="4dp" />
+        <EditText
+            android:id="@+id/etDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue_medium"
+            android:hint="Escribe una descripción"
+            android:padding="8dp"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:gravity="top"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Botón Guardar Cita -->
+        <Button
+            android:id="@+id/btnGuardarCita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue_dark"
+            android:text="Guardar Cita"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>
